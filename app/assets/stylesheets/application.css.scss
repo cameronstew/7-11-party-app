@@ -1,0 +1,31 @@
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+.row {
+  text-align: center;
+  padding:20px;
+}
+
+.col-lg-4 img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50px;
+}
+
+.wrapper{
+  min-height: 500px;
+  margin-top: 50px;
+  height:auto;
+}
+
+.message {
+  text-align: center;
+  background-color: white;
+  width: 20%;
+  margin-left: 38%;
+  border-radius: 34%;
+  padding: 43px;
+  border: 20px solid #b20000;
+}
