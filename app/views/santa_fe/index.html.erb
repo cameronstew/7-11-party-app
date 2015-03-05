@@ -1,64 +1,74 @@
-<div class="page-header">
-  <h1>Santa Fe </h1>
-</div>
-
 <div class="container">
-<div>
-  Use this page to learn about where to stay, what to eat and what to do in Santa Fe the weekend of July 10th-12th.
-</div>
-<div>Getting to Santa Fe</div>
-<div>Where to stay</div>
-<div>What to eat</div>
-<div>What to do</div>
-
-
-
-
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Getting to Santa Fe <!--<span class="text-muted">See for yourself.</span>--></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <%= image_tag('santafetrain.jpeg', class: "featurette-image img-responsive") %>
-    </div>
+  <div class="page-header">
+    <h1>Santa Fe </h1>
   </div>
 
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-5">
-      <%= image_tag('santafe.jpeg', class: "featurette-image img-responsive") %>
-    </div>
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Where to stay<!--<span class="text-muted">See for yourself.</span>--></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
+  <div class="container">
+  <div>
+    Use this page to learn about where to stay, what to eat and what to do in Santa Fe the weekend of July 10th-12th.
   </div>
+  <div>Getting to Santa Fe</div>
+  <div>Where to stay</div>
+  <div>What to eat</div>
+  <div>What to do</div>
 
-  <hr class="featurette-divider">
 
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Where to eat<!--<span class="text-muted">See for yourself.</span>--></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          <%= link_to 'Getting to Santa Fe', travel_path %>
+        </h2>
+        <p class="lead">Get all the travevl information here</p>
+      </div>
+      <div class="col-md-5">
+        <%= image_tag('santafetrain.jpeg', class: "featurette-image img-responsive") %>
+      </div>
     </div>
-    <div class="col-md-5">
-      <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-5">
+        <%= image_tag('santafe.jpeg', class: "featurette-image img-responsive") %>
+      </div>
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          <%= link_to 'Where to stay', accomodations_path %>
+        </h2>
+        <p class="lead">Find out the best places to stay for the weekend</p>
+      </div>
     </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          <%= link_to 'Where to eat', santa_fe_dining_path %>
+        </h2>
+        <p class="lead">Where to eat!</p>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      </div>
+    </div>
+    <div class="row featurette">
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      </div>
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          <%= link_to 'What to do', santa_fe_activities_path %>
+        </h2>
+        <p class="lead">What's going on in Santa Fe that weekend</p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
   </div>
-  <div class="row featurette">
-    <div class="col-md-5">
-      <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-    </div>
-    <div class="col-md-7">
-      <h2 class="featurette-heading">What to do<!--<span class="text-muted">See for yourself.</span>--></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
 </div>
