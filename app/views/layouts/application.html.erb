@@ -27,7 +27,7 @@
   <![endif]-->
 </head>
 <body onload="calcRoute()">
-  <div class="navbar-wrapper">
+  <!-- <div class="navbar-wrapper">
     <div class="container">
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -55,11 +55,49 @@
               <li><%= link_to "Santa Fe", event_details_path(anchor: "santa-fe")  %></li>
               <li><a href="#registry">Registry</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </nav>
-    </div><!-- /.container -->
-  </div>
+    </div>
+  </div> -->
+
+  <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Wes and Cami</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><%= link_to "When and Where", event_details_path(anchor: "event")  %></li>
+            <li><a href="http://rsvp.wesandcami.com/s3/RSVP" target="_blank">RSVP</a></li>
+            <li><%= link_to "Accomodations", event_details_path(anchor: "lodging")  %></li>
+            <li><%= link_to "Travel", event_details_path(anchor: "travel")  %></li>
+            <li><%= link_to "Santa Fe", event_details_path(anchor: "santa-fe")  %></li>
+            <li><%= link_to "Registry", event_details_path(anchor: "registry")  %></li>
+
+            <!-- <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><%= link_to "When and Where", event_details_path(anchor: "event")  %></li>
+                <li><a href="http://rsvp.wesandcami.com/s3/RSVP" target="_blank">RSVP</a></li>
+                <li><%= link_to "Accomodations", event_details_path(anchor: "lodging")  %></li><
+                <li><%= link_to "Travel", event_details_path(anchor: "travel")  %></li>
+                <li><%= link_to "Santa Fe", event_details_path(anchor: "santa-fe")  %></li>
+                <li><%= link_to "Registry", event_details_path(anchor: "registry")  %></li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
   <div class="wrapper">
       <%= yield %>
   </div>
