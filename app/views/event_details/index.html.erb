@@ -2,7 +2,7 @@
   <div class="hero" id="event-details" style="height:790px;">
   </div>
   <div class="holder-of-things">
-    <div id="event" style="margin-top:780px;">
+    <div id="event" >
       <div class="row event-info">
         <h1>
           Event Information<br/>
@@ -10,30 +10,35 @@
         </h1>
         <p>
           The party will be held at the Santa Fe Farmers' Market Pavillion<br/>
+           located in the Railyard at<br/>
+           1607 Paseo de Peralta<br/>
            on<br/>
            Saturday July 11th, 2015.
         </p>
         <div class="event-schedule">
           <h2>6:30</h2>
-          <span>Margaritas</span>
+          <span>Margaritas and guacamole</span>
           <h2>6:45</h2>
           <span>Bride and Groom arrive</span>
           <h2>7:30</h2>
           <span>BBQ</span>
           <h2>8:00</h2>
           <span>Band starts strumming </span><br/>
-          <span>Dancing and toasts to ensue from there</span>
+          <span>Dancing, toasts and revelry til midnight</span>
         </div>
       </div>
     </div>
-    <section id="lodging" style="margin-top:700px;">
+    <div id="here"></div>
+    <section id="lodging" style="margin-top:800px;">
       <div class="row accomodations">
         <h1>
           Accomodations<br/>
           <%= image_tag('swoopy.png') %>
         </h1>
+        <p>The hotels below are both within walking distance to the Farmers' Market Pavilion</p>
         <div class="hotel-santa-fe col-md-4 col-md-offset-2">
             <p>Hotel Santa Fe</p>
+            <span><u>Room block held until 05/10/2015 under Webster-Stewart</u></span>
             <p class="hotel">1501 Paseo de Peralta<br/>Santa Fe, NM</p>
             <p class="link">
               <a href ="http://hotelsantafe.com/" target="_blank">View</a>
@@ -49,6 +54,7 @@
           </p>
         </div>
       </div>
+      <p class="other-lodging">*also be sure to check out <a href="http://www.vrbo.com/" target="_blank">VRBO</a> or <a href="https://www.airbnb.com/" target="_blank">AirBnB</a> - get creative!</p>
     </section>
 
     <section id="travel" style="margin-top:700px;">
@@ -60,13 +66,25 @@
           <div class="row flying">
             <h3>Flying</h3>
             <div class="col-md-4 col-md-offset-2">
-              Albuquerque<br/>
-            <span> <i>ABQ</i></span>
+                Albuquerque<br/>
+              <span> <i>ABQ</i></span><br/>
+              <span>Southwest, American and all major airlines</span>
+              <!-- <ul>
+                <li>Southwest, American and all major airlines</li>
+                <li>American</li>
+                <li>all major airlines</li>
+              </ul> -->
+              <ul>
+                <li>~60 miles from Santa Fe</li>
+                <li>Rental cars need to be reserved in advance due to busy time of year</li>
+                <li>or checkout <a href="http://riometro.org/" target="_blank">NM Railrunner</a> (reliable on weekdays)</li>
+              </ul>
             </div>
 
             <div class="col-md-4">
               Santa Fe<br/>
-            <span><i>SAF</i></span>
+            <span><i>SAF</i></span><br/>
+            <span>American Airlines, US Air and United offer direct flights from DFW, LAX, DEN and CLT</span>
             </div>
 
           </div>
@@ -76,11 +94,11 @@
               <div class="col-md-6" id="map-canvas"></div>
 
               <div class="col-md-6 directions-text">
-                <p> Take 1-25 South </p>
-                <p>Take exit 284 for NM-466/Old Pecos Tr. </p>
+                <p>Take I-25 South</p>
+                <p>Take exit 284 for NM-466/Old Pecos Tr.</p>
                 <p>Turn right onto NM-466 N/Old Pecos Trail (signs for Historic US 66)</p>
-                <p>Turn right onto Old Pecos Trail</p>
-                <p>Slight left onto Old Santa Fe Trail</p>
+                <p>Fork right onto Old Pecos Trail/becomes Old Santa Fe Trail</p>
+                <p>Turn left onto Paseo de Peralta</p>
               </div>
             </div>
               <script type="text/javascript">
@@ -128,17 +146,32 @@
         <h1>
           Santa Fe<br/>
           <%= image_tag('swoopy.png') %>
-          </h1>
-          What to do in Santa Fe that weekend
-        <p class="santa-fe-events">
-          <a href="http://www.folkartalliance.org/markets/santa-fe/" target="_blank">International Folk Art Market</a>
-        </p>
-        <p class="santa-fe-events">
-          <a href="http://www.santafefarmersmarket.com/" target="_blank">Santa Fe Farmers' Market (Saturdays 8-12)</a>
-        </p>
-        <p class="santa-fe-events">
-          <a href="http://www.santafeopera.org/calendar/" target="_blank">Santa Fe Opera</a>
-        </p>
+        </h1>
+        <div class="col-md-offset-3 col-md-6">
+          <p>Santa Fe is in full swing in the summer and that weekend is the International Folk Art Market which is fabulous and draws lots of crowds to Santa Fe. Be sure to reserve early so as not to miss out!</p>
+            What to do in Santa Fe that weekend
+          <p class="santa-fe-events">
+            <a href="http://www.folkartalliance.org/markets/santa-fe/" target="_blank">International Folk Art Market</a>
+          </p>
+          <p class="santa-fe-events">
+            <a href="http://www.santafefarmersmarket.com/" target="_blank">Santa Fe Farmers' Market (Saturdays 8-12)</a>
+          </p>
+          <p class="santa-fe-events">
+            <a href="http://www.santafeopera.org/calendar/" target="_blank">Santa Fe Opera</a>
+          </p>
+          <p class="santa-fe-events">
+            <a href="http://www.lonelyplanet.com/usa/santa-fe/sights/museums-galleries/canyon-road" target="_blank">Canyon Road</a>
+          </p>
+          <p class="santa-fe-events">
+            <a href="http://www.santafeflea.com/" target="_blank">Flea Markets</a>
+          </p>
+          <p class="santa-fe-events">
+            <a href="http://alltrails.com/us/new-mexico/santa-fe" target="_blank">Hiking</a>
+          </p>
+          <p class="santa-fe-events">
+            <a href="http://www.santafeopera.org/calendar/" target="_blank">White Water Rafting</a>
+          </p>
+      </div>
       </div>
     </section>
   </div>

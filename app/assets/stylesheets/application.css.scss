@@ -7,7 +7,9 @@
 body{
   font-family: 'Josefin Sans', sans-serif;
   padding-top:80px;
+  //line-height: 1;
 }
+
 footer {
   background-color: #000;
   position: relative;
@@ -23,24 +25,27 @@ footer {
 .navbar-nav{
   float:right;
 }
-
+.navbar-brand{
+  font-size: 16pt;
+}
 .row {
   text-align: center;
   padding:20px;
 }
 
-.col-lg-4 img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50px;
-}
+// .col-lg-4 img {
+//   width: 140px;
+//   height: 140px;
+//   border-radius: 50px;
+// }
 
 .wrapper{
-  min-height: 650px;
+  min-height: 100%;
   // margin: 150px 0;
   height:auto;
 }
 
+/*under contstruction message */
 .message {
   text-align: center;
   background-color: white;
@@ -61,10 +66,6 @@ footer {
 .sage-inn-link{
   margin: 30px;
   text-align: center;
-}
-
-#event{
-  height: 1000px;
 }
 
 .page #hero{
@@ -107,14 +108,20 @@ footer {
 #santa-fe,
 #lodging,
 #travel{
-  height:800px;
+  min-height:800px;
   background-color: rgba(0, 0, 0, 0.6);
   color:white;
+  display:block;
 }
 
+.other-lodging{
+  text-align:center;
+  font-style: italic;
+  font-size: 14pt;
+
+}
 .event-info{
   padding:80px;
-  height: 300px;
 }
 
 .event-info img,
@@ -124,29 +131,6 @@ footer {
   height:30px;
   width: 150px;
 }
-// .image {
-//   position: relative;
-//   width: 100%; /* for IE 6 */
-// }
-//
-// .image-text {
-//   position: absolute;
-//   top: 30px;
-//   left: 30px;
-//   width: 100%;
-//   color:#cc0000;
-// }
-//
-// .image-text h2 {
-//   font-family: 'Lobster Two', cursive;
-//   font-size:60pt;
-// }
-// .image-text a{
-//   border: thin solid #cc0000;
-//   color:#cc0000;
-//   padding: 5px;
-//   margin: 5%;
-// }
 
 .holder-of-things p{
   font-size: 20pt;
@@ -163,6 +147,14 @@ footer {
 .hotel-santa-fe{
   border-right: thin solid white;
 }
+
+/******Links and hover events****/
+
+a:visited,
+a:hover{
+  text-decoration:none;
+}
+
 .link a,
 .santa-fe-events a{
   color:#fff;
@@ -173,11 +165,12 @@ footer {
   border-radius: 2px;
 }
 
-.link a:hover,
+a, .link a:hover,
 .santa-fe-events a:hover{
   color: #c2004a;
   text-decoration:none;
 }
+
 .link:hover,
 .santa-fe-events:hover{
   -moz-transform: scale(1.1);
@@ -186,6 +179,7 @@ footer {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
+
 
 .driving h3,
 .flying h3{
