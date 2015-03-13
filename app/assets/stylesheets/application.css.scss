@@ -216,3 +216,31 @@ a, .link a:hover,
 .details{
   margin:10% 10% 0;
 }
+
+
+
+/*MEDIA QUERIES*/
+
+/*iPad*/
+@media screen and (max-width: 1024px){
+
+  .container{width:75%;}
+  .column{width:25%;}
+  .column .btn{padding: 0px;}
+}
+/*iPad*/
+@media screen and (max-width: 650px){
+
+  #wrapper{background:blue;}
+  .column{width:80%; float:none;}
+}
+/*iPhone*/
+@media screen and (max-width: 480px) and (min-width: 320px){
+  #welcome{
+    background: image-url("FullSizeRender.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
