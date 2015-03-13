@@ -236,15 +236,17 @@ a, .link a:hover,
 }
 /*iPhone*/
 @media screen and (max-width: 480px) and (min-width: 320px){
-  #welcome,
-  #event-details{
+  #welcome{
     background: image-url("FullSizeRender.jpg") no-repeat center fixed;
     background-color: #000;
-    max-height: 600px !important;
+    max-height: 675px !important;
     -webkit-background-size: 90%;
     -moz-background-size: 90%;
     -o-background-size: 90%;
     background-size: 90%;
+  }
+  #event-details{
+    background-color: #000;
   }
   .navbar {
     padding: 15px;
