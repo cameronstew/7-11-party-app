@@ -236,7 +236,8 @@ a, .link a:hover,
 }
 /*iPhone*/
 @media screen and (max-width: 480px) and (min-width: 320px){
-  #welcome{
+  #welcome,
+  #event-details{
     background: image-url("FullSizeRender.jpg") no-repeat center fixed;
     background-color: #000;
     max-height: 675px !important;
@@ -245,8 +246,12 @@ a, .link a:hover,
     -o-background-size: 90%;
     background-size: 90%;
   }
-  #event-details{
-    background-color: #000;
+
+  #travel,
+  #lodging,
+  #santa-fe,
+  #registry{
+    margin-top: 20px;
   }
   .navbar {
     padding: 15px;
@@ -262,8 +267,7 @@ a, .link a:hover,
     margin-right: 0px;
     margin-top: -6px;
   }
-  .abq,
-  .hotel-santa-fe{
+  .abq{
     border-bottom: 1px solid #fff;
   }
   #map-canvas{
