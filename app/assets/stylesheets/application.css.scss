@@ -192,7 +192,7 @@ a, .link a:hover,
 }
 
 .map-container{
-  height: 400px;
+  height: auto;
   overflow: auto;
 }
 #map-canvas {
@@ -236,7 +236,8 @@ a, .link a:hover,
 }
 /*iPhone*/
 @media screen and (max-width: 480px) and (min-width: 320px){
-  #welcome{
+  #welcome,
+  #event-details{
     background: image-url("FullSizeRender.jpg") no-repeat center fixed;
     background-color: #000;
     max-height: 600px !important;
@@ -258,5 +259,17 @@ a, .link a:hover,
   .navbar-toggle{
     margin-right: 0px;
     margin-top: -6px;
+  }
+  .abq,
+  .hotel-santa-fe{
+    border-bottom: 1px solid #fff;
+  }
+  #map-canvas{
+    display:none;
+  }
+
+  .directions-text{
+    margin: 0;
+    width:auto;
   }
 }
