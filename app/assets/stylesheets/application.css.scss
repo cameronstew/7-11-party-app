@@ -251,4 +251,12 @@ a, .link a:hover,
   footer {
     display:none;
   }
+  .navbar-brand,
+  .container{
+    padding: 0;
+  }
+  .navbar-toggle{
+    margin-right: 0px;
+    margin-top: -6px;
+  }
 }
