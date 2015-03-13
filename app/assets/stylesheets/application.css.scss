@@ -227,6 +227,8 @@ a, .link a:hover,
   .container{width:75%;}
   .column{width:25%;}
   .column .btn{padding: 0px;}
+
+  .click-for-more{display: none;}
 }
 /*iPad*/
 @media screen and (max-width: 650px){
@@ -236,8 +238,7 @@ a, .link a:hover,
 }
 /*iPhone*/
 @media screen and (max-width: 480px) and (min-width: 320px){
-  #welcome,
-  #event-details{
+  #welcome{
     background: image-url("FullSizeRender.jpg") no-repeat center fixed;
     background-color: #000;
     max-height: 675px !important;
@@ -246,12 +247,15 @@ a, .link a:hover,
     -o-background-size: 90%;
     background-size: 90%;
   }
+  #event-details{
+    background-color: #000 !important;
+  }
 
   #travel,
   #lodging,
   #santa-fe,
   #registry{
-    margin-top: 20px;
+    margin-top: 20px !important;
   }
   .navbar {
     padding: 15px;
