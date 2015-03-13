@@ -231,10 +231,11 @@ a, .link a:hover,
   .click-for-more{display: none;}
 }
 /*iPad*/
-@media screen and (max-width: 650px){
+@media screen and (max-width: 775px) and (min-width: 570px){
 
-  #wrapper{background:blue;}
-  .column{width:80%; float:none;}
+  #map-canvas{
+    display:none;
+  }
 }
 /*iPhone*/
 @media screen and (max-width: 480px) and (min-width: 320px){
